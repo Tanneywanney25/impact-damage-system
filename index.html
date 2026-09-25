@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slingshot Siege</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header id="hud">
+        <span id="hud-level">Level: —</span>
+        <span id="hud-birds">Birds: —</span>
+        <span id="hud-score">Score: 0</span>
+        <nav id="level-select"></nav>
+      </header>
+      <main id="stage-wrap">
+        <canvas id="game" width="1200" height="500" aria-label="Slingshot Siege canvas"></canvas>
+        <div id="verdict" hidden></div>
+      </main>
+      <p id="help">Drag the bird back, aim with the dotted guide, release to fire. Destroy every pig.</p>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
