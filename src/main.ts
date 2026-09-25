@@ -19,7 +19,7 @@ async function loadImage(src: string): Promise<HTMLImageElement> {
 }
 
 async function fetchLevel(n: number): Promise<Level> {
-  const res = await fetch(`/levels/level${n}.json`);
+  const res = await fetch(`levels/level${n}.json`);
   if (!res.ok) throw new Error(`level${n}: HTTP ${res.status}`);
   return parseLevel(await res.json());
 }
@@ -39,12 +39,12 @@ async function init(): Promise<void> {
   const verdictEl = requireEl('#verdict');
 
   const [bg, bird, pig, wood1, wood2, base] = await Promise.all([
-    loadImage('/assets/bg.png'),
-    loadImage('/assets/bird.png'),
-    loadImage('/assets/pig.png'),
-    loadImage('/assets/wood1.png'),
-    loadImage('/assets/wood2.png'),
-    loadImage('/assets/base.png'),
+    loadImage('assets/bg.png'),
+    loadImage('assets/bird.png'),
+    loadImage('assets/pig.png'),
+    loadImage('assets/wood1.png'),
+    loadImage('assets/wood2.png'),
+    loadImage('assets/base.png'),
   ]);
   const sprites: SiegeSprites = { bg, bird, pig, wood1, wood2, base };
 
