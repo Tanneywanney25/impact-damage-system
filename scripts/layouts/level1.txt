@@ -1,0 +1,9 @@
+name: First Contact
+birds: 3
+cell: 44
+origin: 780 456
+---
+LLL
+B.B
+.P.
+B.B

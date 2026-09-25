@@ -1,0 +1,12 @@
+name: Double Decker
+birds: 3
+cell: 44
+origin: 720 456
+---
+.LLL.
+.B.B.
+..P..
+LLLLL
+B...B
+.P.P.
+B...B

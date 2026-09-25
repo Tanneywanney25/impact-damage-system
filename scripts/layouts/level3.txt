@@ -1,0 +1,13 @@
+name: The Tower
+birds: 4
+cell: 40
+origin: 820 456
+---
+.P.
+LLL
+B.B
+.P.
+LLL
+B.B
+.P.
+B.B
